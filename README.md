@@ -33,9 +33,9 @@ You need to provide a file containing the list of edges. ID of the vertices must
 
 Examples of datasets at /networks. Below, you'll find a brief description of each (all networks have 10<sup>4</sup> nodes):
 
-* '''gm23.dat''': Power law degree distribution with exponent 2.3
-* ´´gm27.dat''': Power law degree distribution with exponent 2.7
-* ´´rrnhub.dat´´: Random regular network with **m = 4** and a hub with degree = **100**
+* *gm23.dat*: Power law degree distribution with exponent 2.3
+* *gm27.dat*: Power law degree distribution with exponent 2.7
+* *rrnhub.dat*: Random regular network with **m = 4** and a hub with degree = **100**
 
 ## Outputs
 
