@@ -26,25 +26,15 @@ DOI information:
 
 ## Synopsis
 
-This code is a implementation of the RAT (Reactivation per Activity Time) quasistationary method, detailed in our [paper]. It receives a network file, containing a list of edges, as input. Some dynamical parameters can be set in the main code's header. They are:
-
-$\lambda $
+This code is a implementation of the RAT (Reactivation per Activity Time) quasistationary method, detailed in our [paper]. It receives a network file, containing a list of edges, as input. Some parameters can be set in the main code's header. 
 
 ## Dataset input
 
 You need to provide a file containing the list of edges (__in__ and __out__, two collumns). ID of the vertices must be enumerated sequentially as `1, 2, 3,..., N`, where `N` is the total number of vertices of the network. Here, we assume  __undirected__ and __unweighted__ networks without multiple neither self connections.
 
-Consider, for example, a network with `N=5` vertices represented by:
+Examples of datasets at /networks. Below, you'll find a brief description of each (all networks have 10<sup>4</sup>:
 
-```
-1,2
-1,3
-2,4
-2,5
-3,4
-```
 
-Examples of datasets and their specifications are available at http://goo.gl/Bm3VsR.
 
 ## Installation
 
