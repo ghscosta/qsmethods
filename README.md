@@ -39,7 +39,7 @@ Examples of datasets at /networks. Below, you'll find a brief description of eac
 
 ## Outputs
 
-The a given set of parameters, the program outputs the quasistationary distribution P(n) in **pn.dat** and three quasistationary quantities: density of infected vertices, dynamical susceptibility and lifespam. Details about these measures may be found in the [paper].
+For a given set of parameters, the program outputs the quasistationary distribution P(n) in **pn.dat** and three quasistationary quantities on terminal or console: density of infected vertices, dynamical susceptibility and lifespam. Details about these measures may be found in the [paper].
 
 ## Use
 Just build and execute the desired version with a recommended compiler. The file containing the network input must be in the same folder as the .f90 or .py code.
