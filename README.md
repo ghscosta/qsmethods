@@ -9,13 +9,9 @@ This code is part of the article "[]".
 
 ## Versions
 
-(this) [Fortran implementation - for performance](https://github.com/wcota/dynSIS)
+[Fortran implementation]
 
-[Python implementation - learn and use](https://github.com/wcota/dynSIS-py)
-
-[NetworkX Python implementation - range of options](https://github.com/wcota/dynSIS-networkx)
-
-[GA Fortran implementation - Statistically exact, but NOT optimized](https://github.com/wcota/dynSIS-GA)
+[Python implementation]
 
 ## Citation
 
@@ -32,7 +28,7 @@ DOI information:
 
 This code is a implementation of the RAT (Reactivation per Activity Time) quasistationary method, detailed in our [paper]. It receives a network file, containing a list of edges, as input. Some dynamical parameters can be set in the main code's header. They are:
 
-$\lambda 
+$\lambda $
 
 ## Dataset input
 
