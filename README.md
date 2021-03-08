@@ -9,7 +9,8 @@ This code is part of the article "[]".
 
 ## Versions
 
-[Fortran implementation]
+* RAT - Fortran 90
+* RAT - Python 3.7 
 
 [Python implementation]
 
@@ -28,42 +29,22 @@ DOI information:
 
 This code is a implementation of the RAT (Reactivation per Activity Time) quasistationary method, detailed in our [paper]. It receives a network file, containing a list of edges, as input. Some parameters can be set in the main code's header. 
 
-## Dataset input
+## Inputs
 
 You need to provide a file containing the list of edges. ID of the vertices must be enumerated sequentially as `1, 2, 3,..., N`, where `N` is the total number of vertices of the network. Here, we assume  __undirected__ and __unweighted__ networks without multiple neither self connections.
 
 Examples of datasets at /networks. Below, you'll find a brief description of each (all networks have 10<sup>4</sup> nodes):
 
-* 'gm23.dat': Power law degree distribution with exponent 2.3
-* 'gm27.dat': Power law degree distribution with exponent 2.7
-* 'rrnhub.dat': Random regular network with **m = 4** and a hub with degree = **100**
+* ´´gm23.dat´´: Power law degree distribution with exponent 2.3
+* ´´gm27.dat´´: Power law degree distribution with exponent 2.7
+* ´´rrnhub.dat´´: Random regular network with **m = 4** and a hub with degree = **100**
 
+## Outputs
 
-
-## Installation
-
-In Linux and OSX, it is simple: just type ``make`` in the terminal in the *.f90 directory. If you need debugging, use ``make c=1``.
-
-For Windows, however, you must compile all mod*.f90 files and the program code dynamics.f90. An example is:
-
-```gfortran mod_read_tools.f90 mod_random.f90 mod_netdata.f90 dynamics.f90 -o dynamics```
-
+The program outputs the quasistationary distribution P(n) in ´´pn.dat´´ file
 
 ## Use
-
-If you want to manually input the dynamical parameters, just type:
-
-```./dynamics <edges_file> <output_file>```
-
-where ``<output_file>`` will be written with the average density of infected vertices versus time.
-
-Alternatively, use (Linux):
-
-```bash run.sh <edges_file> <output_file> <number of samples> <infection rate lambda> <maximum time steps> <fraction of infected vertices (initial condition)>```
-
-_Example:_
-
-```bash run.sh edges/s01.edges.dat "s01.lb0.002_100-samples.dat" 100 0.002 1000000 0.5```
+Just build and execute the desired version with a recommended compiler. The file containing the network input must be in the same folder as the .f90 or .py code.
 
 ## License
 
