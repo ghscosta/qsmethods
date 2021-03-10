@@ -25,7 +25,7 @@ DOI information:
 
 ## Synopsis
 
-This code is a implementation of the RAT (Reactivation per Activity Time) quasistationary method, detailed in our [paper]. It receives a network file, containing a list of edges, as input. Some parameters can be set in the main code's header. 
+This code is a implementation of the RAT (Reactivation per Activity Time) quasistationary method, detailed in our [paper]. It receives a network file, containing a list of edges, as input. Some parameters can be set in the file *dyn_par.dat*. 
 
 ## Inputs
 
@@ -36,6 +36,13 @@ Examples of datasets at /networks. Below, you'll find a brief description of eac
 * *gm23.dat*: Power law degree distribution with exponent 2.3
 * *gm27.dat*: Power law degree distribution with exponent 2.7
 * *rrnhub.dat*: Random regular network with **m = 4** and a hub with degree = **100**
+
+On file *dyn_par.dat*, you'll find 5 columns. Each column regards to one dynamical parameter:
+1. Infection rate
+2. Averaging time
+3. Relaxation time
+4. Network file name
+5. Initial seed for pseudo-random number generator
 
 ## Outputs
 
