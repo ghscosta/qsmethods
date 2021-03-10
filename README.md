@@ -43,11 +43,11 @@ For a given set of parameters, the program outputs the quasistationary distribut
 
 ## Compiling 
 * Fortran (Gfortran): 
-* * gfortran rta.f90 -o name_exec (faster, no debugging, may give multiple warnings regarding identation (insert flag -w to get rid of them))
-* * gfortran rta.f90 -fcheck=all -fcheck=bounds -o name_exec (slower, for debugging)
+  * gfortran rta.f90 -o name_exec (faster, no debugging, may give multiple warnings regarding identation (insert flag -w to get rid of them))
+  * gfortran rta.f90 -fcheck=all -fcheck=bounds -o name_exec (slower, for debugging)
 * Fortran (Intel): 
-*  * ifort rta.f90 -o name_exec (faster, no debugging)
-*  * ifort rta.f90 -traceback -check all -o name_exec (slower, for debugging)
+  * ifort rta.f90 -o name_exec (faster, no debugging)
+  * ifort rta.f90 -traceback -check all -o name_exec (slower, for debugging)
 * Python:
 
 
