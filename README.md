@@ -54,7 +54,7 @@ If going for Python version, the file *dyn_par.py* will have four rows:
 
 For a given set of parameters, the program outputs the quasistationary distribution P(n) in **pn.dat** and three quasistationary quantities on terminal or console: density of infected vertices, dynamical susceptibility and lifespam. Details about these measures may be found in the [paper].
 
-## Compiling 
+## Compiling and Executing
 * Fortran (Gfortran): 
   * gfortran rta.f90 -o name_exec (faster, no debugging, may give multiple warnings regarding identation (insert flag -w to get rid of them))
   * gfortran rta.f90 -fcheck=all -fcheck=bounds -o name_exec (slower, for debugging)
@@ -62,6 +62,8 @@ For a given set of parameters, the program outputs the quasistationary distribut
   * ifort rta.f90 -o name_exec (faster, no debugging)
   * ifort rta.f90 -traceback -check all -o name_exec (slower, for debugging)
 * Python: python rta.py
+
+* Executing (Fortran only): ./name_exec < dyn_par.dat
 
 Obs: The file containing the network input must be in the same folder as the .f90 or .py code.
 
