@@ -1,7 +1,7 @@
 #INPUT PARAMETERS
 files = "rrnhub.dat"    # network file
 lb = 0.18              # infection rate
-trlx = 10000           # relaxation time
-tave = 10000           # averaging time
+trlx = 1000000           # relaxation time
+tave = 1000000          # averaging time
 
 
