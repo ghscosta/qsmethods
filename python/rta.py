@@ -3,15 +3,10 @@
 import numpy as np
 import pandas as pd
 
-#INPUT PARAMETERS
-
-file = 'rrnhub.dat'
-lb = 0.18
-trlx = 10000
-tave = 10000
+from dyn_par import *
 
 #RECONSTRUCT THE NETWORK
-edges = pd.read_csv(file,header=None)
+edges = pd.read_csv(files,header=None)
 
 #IF VERTICES ARE LABELLED 0,1,...N, UNCOMMENT THE LINE BELOW
 edges = edges - 1
