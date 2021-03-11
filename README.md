@@ -25,7 +25,7 @@ DOI information:
 
 ## Synopsis
 
-This code is a implementation of the RAT (Reactivation per Activity Time) quasistationary method, detailed in our [paper]. It receives a network file, containing a list of edges, as input. Some parameters can be set in the file *dyn_par.dat*. 
+This code is a implementation of the RAT (Reactivation per Activity Time) quasistationary method, detailed in our [paper]. It receives a network file, containing a list of edges, as input. Some parameters can be set in the file *dyn_par.dat* (Fortran) or *dyn_par.py* (Python). 
 
 ## Inputs
 
@@ -37,12 +37,18 @@ Examples of datasets at /networks. Below, you'll find a brief description of eac
 * *gm27.dat*: Power law degree distribution with exponent 2.7
 * *rrnhub.dat*: Random regular network with **m = 4** and a hub with degree = **100**
 
-On file *dyn_par.dat*, you'll find 5 columns. Each column regards to one dynamical parameter:
+On file *dyn_par.dat*, you'll find 5 columns. Each column regards one dynamical parameter:
 1. Infection rate
 2. Averaging time
 3. Relaxation time
 4. Network file name
-5. Initial seed for pseudo-random number generator
+5. Initial seed for pseudo-random number generator only Fortran
+
+If going for Python version, the file *dyn_par.py* will have four rows:
+1. Network file
+2. Infection rate
+3. Relaxation time
+4. Averaging time
 
 ## Outputs
 
@@ -55,8 +61,7 @@ For a given set of parameters, the program outputs the quasistationary distribut
 * Fortran (Intel): 
   * ifort rta.f90 -o name_exec (faster, no debugging)
   * ifort rta.f90 -traceback -check all -o name_exec (slower, for debugging)
-* Python:
-
+* Python: python rta.py
 
 Obs: The file containing the network input must be in the same folder as the .f90 or .py code.
 
